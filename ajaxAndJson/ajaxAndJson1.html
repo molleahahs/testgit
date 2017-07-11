@@ -17,12 +17,15 @@
                     data:{},
                     dataType: 'json',
                     success:function(e){
-														console.log(e.a);
-                            $('.div1').text(e.a);
-                    },
+                        console.log(e);
+                        console.log(e.a);
+                        console.log(e.b);
+                        $('.div1').text(e.a);
+                        $('.div2').text(e.b);
+                        },
                     error:function(e){
-														alert('dd')
-                            console.log(e);
+                    	   alert('dd')
+                        console.log(e);
                     }
                 })
 
