@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax调用json</title>
+    <script src="../../downloadAPI/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+<div class="div1" style="width: 500px;height: 500px;background-color: #eee;"></div>
+<div class="div2" style="width: 200px;height: 200px;background-color: #aaa;"></div>
+<script type="text/javascript">
+   $(function(){
+        $('.div2').bind('click',function(){
+                $.ajax({
+                    url: 'json1.json',
+                    type: 'get',
+                    data:{},
+                    dataType: 'json',
+                    success:function(e){
+														console.log(e.a);
+                            $('.div1').text(e.a);
+                    },
+                    error:function(e){
+														alert('dd')
+                            console.log(e);
+                    }
+                })
+
+        })
+    })
+
+</script>
+</body>
+</html>
