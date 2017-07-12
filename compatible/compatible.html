@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兼容问题</title>
+</head>
+<style type="text/css">
+    .setColor{
+        color:#efefef;/*所有浏览器*/
+        *color:#aeaeae;/*ie6和ie7*/
+        _color:#eaeaea;/*ie6，FF不支持_*/
+        color:#ababab\9;/*ie6~ie10,FF不支持\9*/
+        color:#cdcdcd\0;/*ie8~ie10*/
+        color:#cdcdcd;/*ie9和ie10*/
+        color:#333333  !important;/*一般来说，IE6不支持important*/
+        font-size: 12px;
+    }
+    .setfontsize{
+        font-size: 5px;
+        -webkit-text-size-adjust: none;
+    }
+/*     *div{
+    font-size: 15px;IE6
+}
+*+div{
+    font-size: 30px;IE7
+} */
+     .wrap{
+    width:440px;height: 200px;border: 1px solid black;
+}
+.box{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 20px;
+}
+</style>
+<body>
+<!--[if IE]>
+<div>IE浏览器才能看到</div>
+<![endif]-->
+<!-- [if IE 11]>
+   <div>IE11浏览器才能看到</div>
+<![endif]-->
+<div class="setColor">所有浏览器都能看到</div>
+<div class="setfontsize">谷歌浏览器字体大小小于12px</div>
+<div class="wrap">
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+</body>
+</html>
