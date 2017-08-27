@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="../jquery/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="../jquery/jquery.fancybox.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../jquery/jquery.fancybox.min.css">
+	<title>fancybox plugins</title>
+</head>
+<body>
+	<div>
+		<!-- <a class="grouped_elements" rel="group1" href="image_big_1.jpg"><img src="image_small_1.jpg" alt=""></a>  
+		<a class="grouped_elements" rel="group1" href="image_big_2.jpg"><img src="image_small_2.jpg" alt=""></a>        
+		<a class="grouped_elements" rel="group2" href="image_big_3.jpg"><img src="image_small_3.jpg" alt=""></a>   
+		<a class="grouped_elements" rel="group2" href="image_big_4.jpg"><img src="image_small_4.jpg" alt=""></a>  -->
+		<a class="grouped_elements" href="fancyboxImages/beautyWomanbig.png"><img src="fancyboxImages/beautyWomansmall.png" alt=""></a>  
+		<a class="grouped_elements" href="fancyboxImages/coupleDollbig.png"><img src="fancyboxImages/coupleDollsmall.png" alt=""></a>        
+		<a class="grouped_elements" href="fancyboxImages/buidingRoad1big.png"><img src="fancyboxImages/buidingRoad1small.png" alt=""></a>   
+		<a class="grouped_elements" href="fancyboxImages/buidingLake1big.png"><img src="fancyboxImages/buidingLake1small.png" alt=""></a> 
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("a.grouped_elements").fancybox({
+			'transitionIn'  :   'elastic',  
+	        'transitionOut' :   'none',  
+	        'speedIn'       :   600,  
+	        'speedOut'      :   200,  
+	        'overlayShow'   :   true,  
+	        'overlayColor'  :   '#000',  
+	        'cyclic'        :   true, 
+	        // 'opacity'       :   true,
+	        'showNavArrows' :   true,
+	        'easingIn'      :   'easeInOutExpo'  
+		});
+	})
+	</script>
+	 
+</body>
+</html>
