@@ -13,8 +13,8 @@
 	.controlNav{width: 100%;margin: 0;padding: 0;position: absolute;bottom: 30px;z-index: 1}
 	.controlNav li{display: inline-block;width: 11px;height: 11px;text-align: center;margin-right: 10px;}
 	.controlNav li a{width: 11px;height: 11px;display: block;background-color: #fff;border-radius: 50%;border: 1px solid #000;}
-	.controlNav li a:hover{background-color: #dadada;}
-	.controlNav li .flex-active{background-color: #dadada;}
+	.controlNav li a:hover{background-color: #000;}
+	.controlNav li .flex-active{background-color: #000;}
 </style>
 <body>
 	<div class="scroll-container">
@@ -52,10 +52,7 @@
 			nextText: "下一张",
 			slideToStart: "2",
 			// pauseOnAction: true,
-			pauseOnHover: true,
-			after: function(e){
-				console.log(e);
-			 }  
+			pauseOnHover: true 
 		})
 	})
 </script>
