@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>控制台使用debugger</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function f1(){
+			console.log('f1');
+			f2();
+		}
+		function f2(){
+			console.log('f2');
+			f4();
+		}
+		function f4(){
+			debugger;
+			console.log('f4');
+			f5();
+		}
+		function f5(){
+			console.log('f5');
+			f6();
+		}
+		function f6(){
+			console.log('f6');
+		}
+		f1();
+
+	</script>
+</body>
+</html>
