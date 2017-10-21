@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>闭包，块作用域，循环，控制台打印</title>
+</head>
+<body>
+	<div style="background-color: yellow;width: 500px;height: 500px;margin: 0 auto;" id="clickdivround"></div>
+	<script type="text/javascript">
+		function foo(num){
+			console.log("foo:" + num);
+		}
+		var i;
+		for(i = 0; i < 10; i++){
+			if(i >　5){
+				foo(i);
+			}
+		}
+		//想不懂这个地方为什么会打印出
+		//foo:6
+		//foo:7
+		//foo:8
+		//foo:9
+		//但是js是没有块级作用域的，为什么不是只打印foo:9列？因为这里是全局，没有形成闭包
+	</script>
+	<script type="text/javascript">
+		//闭包的定义：当函数可以记住并访问所在的词法作用域时，就产生了形成闭包的条件之一，条件之二是，这个函数在当前词法作用域之外执行。
+		console.log('分界线');
+		// function define1(){
+		// 	for(var j = 0; j < 10; j++){
+		// 		document.getElementById('clickdivround').onclick = function(){
+		// 			console.log(j);
+		// 		} 
+		// 	}
+		// }
+		//为什么这个闭包只打印出10呢？
+		//书上说因为词法作用域只有一个j,所以我想的是后来的j会覆盖以前的j，所以就只打印出10.
+		function define2(){
+			for(var j = 0; j < 10; j++){
+				function notclosure(){
+					console.log(j);
+				}
+				notclosure();
+			}
+		}
+		define2();
+		//为什么这里不是只打印10呢？而是打印了0,1,2,3,4,5,6,7,8,9啊？
+		//按道理来说全局词法作用域里面也只有一个j啊，为什么j不是最后的10呢？
+		function define3(){
+			for(var j = 0; j < 10; j++){
+				function notclosure3(){
+					console.log(j);
+				}
+				return notclosure3;
+			}
+		}
+		var baz = define3();
+		baz();
+		//这里算是闭包不，是的话为什么不是只打印10，而是只打印了0啊？
+		//以上三个函数的解释，死记硬背：define1和define2是因为循环中的词法作用域只对闭包有用。
+		//图三是因为return在第一个console.log(0);的时候就把函数中止了，所以只返回一个0。
+	</script>
+
+</body>
+</html>
