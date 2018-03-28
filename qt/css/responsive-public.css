@@ -1,0 +1,254 @@
+html,body,div,span,ul,li,table,tbody,tr,td,a{margin: 0;padding:0;}
+ul,li{list-style-type: none;}
+body{background-color: #fff;font-size:100%;height:100%;font-family: "microsoft yahei";}
+a{text-decoration: none;color:#000;}
+a:hover,a:active,a:visited{text-decoration: none;}
+
+/*头部样式*/
+.fr{float: right;}
+.headerborder{position:relative;z-index: 20;width: 100%;text-align: center;-moz-box-shadow: 2px -2px 16px #e3e3e3;
+-webkit-box-shadow:2px 2px 16px #e3e3e3;box-shadow:  2px 2px 16px #e3e3e3;}
+.header{width: 1200px;text-align: center;height: 86px;
+	margin: 0 auto;position: relative;}
+.header .headernav{text-align: center;width:100%;height: 86px;}
+.logodiv,.navdiv{float: left;}
+.logodiv{margin-right: 54px;}
+/*头部样式导航*/
+.navdiv{width: 60%;}
+.navul .navli{float: left;width: 16.6%;position: relative;height: 86px;line-height: 86px;}
+.navul .navli .navlink{display: block;width: 88%;height: 100%;font-size: 1.5em;
+color: #726359;}
+.navul .navli .navlink:hover{background-image: url(../img/navbg.jpg);
+	background-position: center center;background-repeat: no-repeat;color: #fff;}
+/*头部样式导航结束*/
+/*头部样式二级导航*/
+.navul .navli .navtwoul{width: 88%;position:absolute;display: none;background-color: #e3e3e3;
+z-index: 100;}
+.navul .navli .navtwoul li a{display: block;width: 100%;height: 32px;
+	line-height: 32px;font-size: 1.3em;}
+.navul .navli .navtwoul li a:hover{background-color: #ed6230;color:#fff;}
+/*头部样式二级导航结束*/
+/*头部样式登录注册*/
+.headerlogin1{position: absolute;top: 0;right: 0;width: 24%;height: 86px;
+	text-align: center;}
+.headerlogin1 img{margin-right: 10px;}
+.headerlogin1 span{display: inline-block;line-height: 86px;margin-right: 10px;
+font-size: 1.3em;}
+.headerlogin1 span a{color: #726359;}
+.top-massage{position: relative;}
+.reddot{position: absolute;top:28px;right: -18px;display: block;width: 9px;height: 9px;
+background-color: #ed6230;border-radius: 50%;-o-border-radius:50%;
+-moz-border-radius:50%;-webkit-border-radius:50%}
+/*头部样式登录注册结束*/
+/*头部样式登录注册2*/
+.headerlogin2{position: absolute;top: 0;right: 0;width: 22%;height: 86px;
+	text-align: center;}
+.headerlogin2 span{display: inline-block;line-height: 86px;margin-right: 20px;
+font-size: 1.3em;}
+.headerlogin2 .login{margin-right: 6px;}
+.headerlogin2 .loginbtn a{display: inline-block;width: 111px;height: 100%;
+	background-image: url(../img/loginbg.jpg);background-repeat: no-repeat;
+background-position: center center;}
+/*头部样式登录注册2结束*/
+/*头部样式结束*/
+
+
+
+
+
+/*页面中间右边样式*/
+.listtitle{height: 50px;line-height: 50px;text-align: left;padding-left: 20px;
+font-size: 1.6em;background-color: #fbfbfb;border:1px solid #e3e3e3; }
+.listtitlenob{height: 50px;line-height: 50px;text-align: left;padding-left: 20px;
+font-size: 1.5em;background-color: #fbfbfb;border-bottom:1px solid #e3e3e3; }
+.newsdiv{position: relative;margin-bottom: 20px;}
+.newsdiv img{width: 100%;}
+.newstitle{height: 36px;width: 100%;line-height: 36px;background-color: rgba(0,0,0,0.5);
+	position: absolute;bottom: 0;text-align: left;padding-left: 20px;color: #fff;
+font-size: 1.6em;}
+.listrighttab{border: 1px solid #e3e3e3; height: 378px;}
+.listrighttab ul{position: relative;}
+.listrighttab ul li{float: left;width: 25%;height: 50px;line-height: 50px;
+	background-color: #fbfbfb;border-right: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;cursor: pointer;}
+.listrighttab ul li:first-child{border-bottom: none;background-color: #fff;}
+.listrighttabcontent{display: none;text-align: center;width: 338px;font-size: 1.5em;
+	line-height: 1.8em;position: absolute;left: 0;padding: 20px;}
+.listrighttabcontent1{display: block;}
+/*页面右边样式结束*/
+
+/*页面左右样式结束*/
+.listleft,.listright{float: left;}
+.listleft{margin-right: 15px;width: 849px;}
+.listright{width: 333px;}
+/*页面左右样式结束*/
+
+/*底部样式*/
+.footerborder{width: 100%;height: 138px;text-align: center;-moz-box-shadow: 2px -2px 3px #e3e3e3;
+-webkit-box-shadow:2px -2px 3px #e3e3e3;box-shadow:  2px -2px 3px #e3e3e3;
+background-color: #fff;margin-top: 28px;margin-bottom: 22px;}
+.footer{width: 1200px;text-align: center;height: 138px;
+	margin: 0 auto;position: relative;padding-top: 20px;}
+.footerimg:after{content: '';height: 0;display:block;clear: both;}
+.footerimg .footerlogo,.footerimg .footer-brand,.footerimg .footer-media{float: left;}
+.footerimg .footerlogo{margin-left: 22px;}
+.footer-brand,.footer-media{margin-left: 32px;}
+.footer-brand a:after{content:"";margin-left: 8px;margin-right: 8px;border:1px solid #e3e3e3;}
+.footerimg .footer-brand a:last-child:after{border: none;margin-left: 0;}
+/*底部样式版权*/
+.footernav{margin-top: 20px;}
+.footernav span{margin-right: 10px;}
+.footernav span:after{content:"";margin-left: 14px;border:1px solid #e3e3e3;}
+.footernav .noafter:after{content:"";margin-left: 0;border:none;}
+.footernav span:nth-last-child(1):after{border: none;}
+.footernav span a{color:#726359;font-size: 14px;}
+.copyright{color:#726359;margin-left: 30px;font-size: 14px;}
+/*底部样式版权结束*/
+/*底部样式结束*/
+
+/*中间左边分页样式*/
+.pagelist{height: 82px;padding-top: 25px;font-size: 1.4em;}
+.pagelist span{display: inline-block;}
+.pagelist ul,.pagelist ul li{display: inline-block;}
+.pagelist span a{width: 100%;height: 100%;
+	padding: 5px 10px;background-color: #f5f5f5;
+	border: 1px solid #ccc;}
+.pagelist .curbg{background-color: #ed6230;color: #fff;}
+.pagelist input{height: 31px ;width: 63px;}
+.pagelist button{width: 63px;height: 32px;border: none;}
+/*中间左边分页样式结束*/
+
+
+
+/*自适应导航样式*/
+.mobile-nav{position: relative;padding-top: 1px;width: 100%;
+	height: 36px;display: none;text-align: center;}
+.navloginul{display: none;}
+.navloginul{position: absolute;top:36px;right: 0;width: 100px;height: auto;
+z-index: 1;background-color: rgba(0,0,0,0.5);}
+.navloginul li{border-bottom: 1px solid #000;}
+.navloginul li a{color: #fff;font-size: 20px;width: 100%;height: 100%;
+    line-height: 40px;}
+.openmbar{position: absolute;top: 4px;left: 4px;font-size:26px;
+cursor: pointer;z-index: 1;}
+.mobilenavul{position: fixed;top: 0;left: -200px;background-color: rgba(0,0,0,0.5);
+width: 200px;z-index: 1;}
+.mobilenavli{height: auto;font-size: 1.8em;background-color: rgba(0,0,0,0.5);
+vertical-align: middle;border-bottom:1px solid #000;}
+.mobilenavlink{display: block;color: #fff;width: 100%;height: 100%;
+vertical-align: middle;line-height: 62px;text-align: left;
+padding-left: 50px;}
+.mobilenavtwoul{z-index: 2;display: none;}
+.mobilenavtwoul li a{display: block;width:100%;height: 100%;
+	text-align:left;color: #ed6230;padding-left: 80px;}
+.mobilenavtwoul li a:hover{color:#000;}
+.loginmodalstyle{width: 28px;height: 26px;
+	line-height: 30px;position: absolute;top: 4px;right: 2px;}
+.loginmodalstyle img{width: 100%;height: 100%;}
+.mobilenavimg{height: 35px;}
+
+/*自适应导航样式结束*/
+
+@media screen and (max-width: 1200px) {
+	.footerborder{margin-bottom: 0;}
+	.listleft,.pagelist,.issueleft{border-bottom: none;}
+	/*轮播图*/
+	.flexslider{
+		border: none;
+		box-shadow: none;
+	}
+	/*轮播图结束*/
+	/*自适应导航显示*/
+	.mobile-nav{display: block;}
+	/*自适应导航显示结束*/
+	/*100%的层*/
+	.headerborder .header,.pagelist ul .mobilehidepage{display: none;}
+	.middle,.footer,.listleft,.listright,.listrighttabcontent{width: 100%;}
+	/*100%的层结束*/
+	.middle{margin-top: 0;}
+	.flexslider{margin-bottom: 0}
+	/*底部的友情图标样式*/
+	.footerimg{display: none;text-align: center;}
+	.footerimg .footerlogo{float: none;}
+	.footerimg .footerlogo,.footer-brand,.footer-media{
+		margin-left: 0;width: 100%;
+	}
+
+	.footer-brand a{float: left;width: 29%;display: block;
+		margin-left: 10px;}
+	.footer-brand a img{width: 100%;}
+	.footer-brand a:after{border:none;margin-left: 0; }
+	.footer-brand span,.footer-media span{display: block;font-size: 2em;
+    font-weight: bolder;}
+    .footer-media a{margin-left: 10px;}
+	/*底部的友情图标样式结束*/
+	.copyright{display: block;margin-top: 10px;}
+	/*分页*/
+	.pagelist{font-size: 1em;}
+	.pagelist span a{padding:2px;}
+	.pagelist input{height: 20px;width: 38px;border: 1px solid #e3e3e3;}
+	.pagelist button{width: 46px;height: 21px;}
+	/*分页结束*/
+	
+}
+@media screen and (max-width: 1024px) and (min-width:769px){
+	body{font-size: 200%;}
+	.listrighttabtitle{font-size: 1.2em;}
+	.footer-brand a{width: 18%;}
+	.mobilenavli{font-size: 1.6em;}
+	.footernav span a,.copyright{font-size: 1.3em;}
+	/*分页*/
+	.pagelist{height: 96px;padding-top: 27px;font-size: 1.3em;} 
+	.pagelist span a{padding:6px 14px;}
+	.pagelist input{height: 46px;width: 107px;}
+	.pagelist button{width: 107px;height: 45px;}
+	/*分页结束*/
+}
+@media screen and (max-width: 768px) and (min-width:415px){
+	body{font-size: 164%;}
+	.listrighttabtitle{font-size: 1.2em;}
+	.footer-brand a{width: 18%;}
+	.mobilenavli{font-size: 1.6em;}
+	/*分页*/
+	.pagelist{font-size: 1em;padding-top: 17px;
+		height: 64px;}
+	.pagelist span a{padding:5px 12px;}
+	.pagelist input{height: 34px;width: 92px;}
+	.pagelist button{width: 70px;height: 33px;}
+	/*分页结束*/
+}
+@media screen and (max-width: 414px){
+	/*分页*/
+	.pagelist span a{padding:4px 8px;}
+	.pagelist input{height: 25px;}
+	.pagelist button{height: 23px}
+	/*分页结束*/
+}
+@media screen and (max-width: 375px){
+	/*分页*/
+	.pagelist span a{padding:2px 4px;}
+	.pagelist input{height: 22px;}
+	.pagelist button{height: 21px;}
+	/*分页结束*/
+}
+@media screen and (max-width: 360px){
+	/*分页*/
+	.pagelist span a{padding:4px;}
+	/*分页结束*/
+	.footernav span:after{margin-left: 12px;}
+}
+@media screen and (max-width: 320px) {
+	/*分页*/
+	.pagelist{font-size: 1em;}
+	.pagelist span a{padding:1px 2px;}
+	.pagelist input{height: 20px;width: 30px;}
+	.pagelist button{width: 38px;height: 21px;}
+	/*分页结束*/
+	/*底部的版权样式*/
+	.footernav span{
+		margin-right: 6px;
+	}
+	.footernav span:after{margin-left: 8px;}
+	/*底部的版权样式结束*/
+}
+/*自适应导航结束*/

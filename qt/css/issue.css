@@ -1,0 +1,22 @@
+/*issue中间样式*/
+.middle{width: 1200px;text-align: center;margin: 0 auto;margin-top: 30px;}
+.middle:after{content: '';height: 0;display:block;clear: both;}
+.issueleft{width: 100%;border-bottom:1px solid #e3e3e3; }
+/*issue中间编辑器样式*/
+
+/*issue中间左边编辑器结束*/
+/*issue中间样式结束*/
+/*issue自适应样式*/
+@media screen and (max-width: 1200px){
+	.listright{margin-top: 38px !important;}
+}
+@media screen and (max-width: 1024px) and (min-width:769px){
+	.middleedit{font-size: 1.3em;}
+}
+@media screen and (max-width: 768px) and (min-width:415px){
+	.middleedit{font-size: 1.3em;}
+}
+@media screen and (max-width: 414px){
+	.middleedit{font-size: 1.3em;}
+}
+/*issue自适应样式结束*/

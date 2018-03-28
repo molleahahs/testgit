@@ -1,0 +1,62 @@
+/*agColumn中间样式*/
+.middle{width: 1200px;text-align: center;margin: 0 auto;margin-top: 30px;}
+.middle:after{content: '';height: 0;display:block;clear: both;}
+/*agColumn中间轮播样式*/
+#slider,#slider .slider,#slider .slider li,#slider .slider li img{width: 100%;}
+/*agColumn中间轮播样式结束*/
+/*agColumn中间左边样式*/
+.agleftborder{width: 100%;border: 1px solid #e3e3e3;margin-top: 20px;}
+.listleftnews{width: 100%;}
+.listleftnewsdetails{padding: 26px;height: 204px;border-bottom: 1px solid #e3e3e3;}
+.listleftnewsdetails .listleftimg,.listleftnewsdetails .listleftintro{float: left;}
+.listleftnewsdetails:after{content: '';height: 0;display:block;clear: both;}
+.listleftnewsdetails .listleftimg{width: 32%;}
+.listleftnewsdetails .listleftimg a,.listleftnewsdetails .listleftimg a img{width: 100%;height: 100%;}
+.listleftnewsdetails .listleftintro{width: 68%;padding-left: 20px;text-align: left;
+height: 100%;position: relative;}
+.listlefttitle{font-size: 1.8em;}
+.listleftsummary,.issuingtime,.clickimg span,.listleftsummary a{color: #999999;}
+.listlefttitle,.listleftsummary{padding:4px;}
+.issuingtime{position: absolute;bottom: 0;left: 24px;font-size: 1.4em;}
+.clickimg{position: absolute;bottom: 0;right: 0;display: block;}
+.clickimg span{margin-left: 10px;padding: 6px;background-image: url(../img/member.jpg);width: 84px;height: 24px;}
+.fa:before{margin-right: 10px;}
+/*agColumn中间左边样式结束*/
+/*agColumn中间样式结束*/
+
+/*agColumn自适应样式*/
+@media screen and (max-width: 1200px){
+	.listleftnewsdetails{padding: 4px;height: auto;}
+	.listleftnewsdetails .listleftimg{width: 100%;height: auto;}
+	.listleftimg a img{width: 100%;height: 100%;}
+	.listleftnewsdetails .listleftintro{padding-left: 0;}
+	.clickimg{position: static;text-align: right;}
+	.clickimg span{padding-left: 10px;margin-left: 0;
+	display: inline-block;text-align: left;}
+	.listlefttitle{font-size: 1.4em;}
+	.listleftsummary{padding-left: 0;font-size: 1em;}
+	.listlefttitle a span{padding:2px;}
+	.issuingtime{bottom: 0;}
+}
+@media screen and (max-width: 1024px) and (min-width:769px){ 
+	.listleftsummary{font-size: 1.2em;} 
+	.listleftnewsdetails .listleftintro{width: 80%;padding-left: 16px;}
+}
+@media screen and (max-width: 768px) and (min-width:415px){
+	.listleftnewsdetails .listleftintro{width: 74%;padding-left: 10px;}
+	.issuingtime{font-size: 1em;}
+}
+
+@media screen and (max-width: 414px){
+	.listleftnewsdetails .listleftintro{width: 100%;}
+}
+@media screen and (max-width: 375px){
+	.listleftnewsdetails .listleftintro{width: 100%;}
+}
+@media screen and (max-width: 360px){
+	.listleftnewsdetails .listleftintro{width: 100%;}
+}
+@media screen and (max-width: 320px){
+	.listleftnewsdetails .listleftintro{width: 100%;}
+}
+/*agColumn自适应样式结束*/

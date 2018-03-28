@@ -1,0 +1,117 @@
+/*communication中间样式*/
+.middle{width: 1200px;text-align: center;margin: 0 auto;margin-top: 2px;}
+.middle:after{content: '';height: 0;display:block;clear: both;}
+/*communication中间轮播样式*/
+.sliderbg{width: 100%;background-color: #e3e3e3;}
+#slider,#slider .slider,#slider .slider li,#slider .slider li img{width: 79%;}
+#slider{text-align: center;margin: 0 auto;margin-bottom: 25px;}
+/*communication中间轮播样式结束*/
+.communicationleft{width: 100%;}
+.comunicationmunu{width: 100%;background-color: #fbfbfb;position: relative;}
+.communicationleftbgdiv{float: right;height: 50px;width: 72%;
+	border-bottom:1px solid #e3e3e3;text-align: right;padding-right: 20px;
+	position: absolute;top: 1px;right: 0; }
+.communicationleftbgdiv .issue{display: inline-block;line-height: 50px;
+text-align: left;}
+.communicationleftbgdiv .issue a{display: inline-block;width: 122px;height: 100%;background-image: url(../img/communicationissue.jpg);
+background-repeat: no-repeat;background-position: center center;
+    font-size: 1.6em;color: #fff;}
+.communicationleftbgdiv .issue .fa:before{margin-left: 10px;}
+.communicationleftul{position: relative;height: 50px;
+line-height: 50px;text-align: left;font-size: 1.4em;width: 28%;}
+.communicationleftul li{float: left;width: 50%;text-align: center;
+border-bottom: 1px solid #e3e3e3; font-size: 1.1em;cursor: pointer;}
+.communicationleftul .lastli{width: 70%;}
+/*communication中间左边样式*/
+.listleft{width: 849px;border: 1px solid #e3e3e3; }
+.communicationleftul .ullito1{background-color:#fff;border-bottom:none;border-top:4px solid #ed6230;}
+.to2{display: none;}
+.listleftnewsdetails{padding: 20px;height: 102px;border-bottom: 1px solid #e3e3e3;}
+.listleftnewsdetails .listleftimg,.listleftnewsdetails .listleftintro{float: left;}
+.listleftnewsdetails:after{content: '';height: 0;display:block;clear: both;}
+.listleftnewsdetails .listleftimg{width: 10%;}
+.listleftnewsdetails .listleftintro{width: 90%;padding-left: 20px;text-align: left;
+height: 100%;position: relative;}
+.listlefttitle{font-size: 1.6em;}
+.listleftsummary,.clickimg span,.listleftsummary a{color: #999999;}
+.listlefttitle,.listleftsummary{padding:4px;}
+.listlefttitle a span{padding: 4px;margin-left: 12px;background-color: #ed6230;border: 1px solid #ed6230;
+border-radius: 6px;-o-border-radius:6px;-webkit-border-radius: 6px;-moz-border-radius: 6px;color: #fff;}
+.listleftsummary{font-size: 1.4em;padding-left: 12px;padding-top: 8px;}
+.clickimg{position: absolute;bottom: 0;right: 0;display: block;}
+.clickimg span{display: block;margin-left: 10px;padding: 6px;width: 84px;height: 24px;
+background-image: url(../img/member.jpg);margin-bottom: 6px;}
+.fa:before{margin-right: 10px;}
+.listleftnewsreply{text-align: left;margin-top: 4px;font-size: 1.6em;
+padding: 20px;}
+/*communication中间左边样式结束*/
+/*communication中间样式结束*/
+
+/*communication自适应样式*/
+@media screen and (max-width: 1200px){
+	.communicationleftul{font-size: 1em;width: 48%;}
+	.communicationleftbgdiv{width: 52%;}
+	.listleftnewsdetails{padding: 4px;height: auto;}
+	.listleftnewsdetails .listleftimg{width: 54px;height: 60px;}
+	.listleftimg a img{width: 100%;height: 100%;}
+	.listleftnewsdetails .listleftintro{width: 80%;padding-left: 0;}
+	.clickimg{position: static;text-align: right;}
+	.clickimg span{padding-left: 10px;margin-left: 0;
+	display: inline-block;text-align: left;}
+	.listlefttitle{font-size: 1.4em;}
+	.listleftsummary{padding-left: 0;font-size: 1em;}
+	.listlefttitle a span{padding:2px;font-size: 0.6em;}
+	/*分页*/
+	.pagelist{font-size: 1em;}
+	.pagelist span a{padding:2px;}
+	.pagelist input{height: 20px;width: 38px;border: 1px solid #e3e3e3;}
+	.pagelist button{width: 46px;height: 21px;}
+	/*分页结束*/
+}
+@media screen and (max-width: 1024px) and (min-width:769px){
+	.communicationleftbgdiv .issue a{background-size: cover;
+		width: 224px;}  
+	.listleftsummary{font-size: 1.2em;} 
+	/*分页*/
+	.pagelist{height: 96px;padding-top: 27px;font-size: 1.3em;} 
+	.pagelist span a{padding:14px;}
+	.pagelist input{height: 54px;width: 107px;}
+	.pagelist button{width: 107px;height: 55px;}
+	/*分页结束*/
+}
+@media screen and (max-width: 768px) and (min-width:415px){
+	/*分页*/
+	.pagelist{font-size: 1em;padding-top: 17px;
+		height: 64px;}
+	.pagelist span a{padding:12px;}
+	.pagelist input{height: 40px;width: 92px;}
+	.pagelist button{width: 70px;height: 39px;}
+	/*分页结束*/
+	.communicationleftbgdiv .issue a{font-size: 1em;}
+}
+@media screen and (max-width: 414px){
+	/*分页*/
+	.pagelist span a{padding:8px;}
+	.pagelist input{height: 28px;}
+	.pagelist button{height: 27px}
+	/*分页结束*/
+}
+@media screen and (max-width: 375px){
+	/*分页*/
+	.pagelist span a{padding:6px;}
+	/*分页结束*/
+}
+@media screen and (max-width: 360px){
+	/*分页*/
+	.pagelist span a{padding:4px;}
+	/*分页结束*/
+}
+@media screen and (max-width: 320px){
+	/*分页*/
+	.pagelist{font-size: 1em;}
+	.pagelist span a{padding:2px;}
+	.pagelist input{height: 20px;width: 30px;}
+	.pagelist button{width: 38px;height: 21px;}
+	/*分页结束*/
+}
+/*communication自适应样式结束*/
